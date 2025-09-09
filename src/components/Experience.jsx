@@ -24,7 +24,7 @@ export default function Experience({ isEnglish }) {
             className={`absolute uppercase text-bg-effects
              text-4xl  lg:${isEnglish ? "-top-10" : "-top-15"}
              ${isEnglish ? "-top-10" : "-top-25"}
-             left-10 z-           
+             left-15           
              sm:text-5xl
              md:text-6xl md:-top-12 md:left-24
              lg:text-7xl lg:top-24 lg:left-[-40px]

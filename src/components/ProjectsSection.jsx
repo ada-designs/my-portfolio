@@ -213,17 +213,17 @@ export default function ProjectsSection({ isEnglish }) {
   return (
     <section className="container-main gap-15" id="projects">
       <h2 className="self-center lg:self-start text-center lg:text-start">
-        <span className="text-switching-accent font-extrabold">
+        <span className="text-switching-accent text-2xl md:text-4xl lg:text-5xl font-extrabold">
           {isEnglish ? "Here's a sneak peek" : "Тук може да видите"}
         </span>
         <br />
-        <span className="text-primary-text">
+        <span className="text-primary-text text-2xl md:text-4xl lg:text-5xl">
           {isEnglish
             ? "at some exciting projects"
             : "някои от вълнуващите проекти,"}
         </span>
         <br />
-        <span className="text-switching-accent font-extrabold">
+        <span className="text-switching-accent font-extrabold text-2xl md:text-4xl lg:text-5xl">
           {isEnglish ? "which I've built" : "които съм направил"}
         </span>
       </h2>

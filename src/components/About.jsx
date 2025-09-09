@@ -50,7 +50,7 @@ export default function About({ isEnglish }) {
   return (
     <section className="container-main w-[90%] gap-20" id="about">
       <div className="flex flex-col items-center">
-        <h2 className="text-primary-text text-center capitalize relative mb-10 z-10">
+        <h2 className="text-primary-text text-center capitalize relative mb-10 z-10 text-3xl md:text-4xl lg:text-5xl">
           {`${isEnglish ? "Behind the codes" : "Зад кодовете"}`}
           <br />
           <span className="text-switching-accent">{`${

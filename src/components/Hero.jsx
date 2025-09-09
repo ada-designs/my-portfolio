@@ -3,17 +3,17 @@ export default function Hero({ isEnglish }) {
     <section className="container-main flex flex-col mb-0 pb-0">
       <div className="flex flex-col items-center justify-center py-10 md:py-14 lg:py-16">
         {/* heading */}
-        <div className="z-10 text-center space-y-2 lg:w-[1200px] md:w-[700px] w-[300px]">
-          <h1 className="text-primary-text flex flex-wrap justify-center text-center font-light text-3xl md:text-5xl lg:text-6xl">
+        <div className="z-10 text-center space-y-2  lg:w-[1200px] md:w-[700px] w-[300px]">
+          <h1 className="text-primary-text flex flex-wrap justify-center text-center font-light text-4xl md:text-5xl lg:text-6xl">
             {isEnglish ? "I'm" : "Аз съм"}{" "}
-            <span className="text-switching-accent font-bold mr-2 md:mr-3 px-3 md:px-5 ml-1 border rounded-3xl">
+            <span className="text-switching-accent text-5xl md:text-5xl lg:text-6xl font-bold mr-2 md:mr-3 px-3 md:px-5 ml-1 border rounded-3xl">
               {isEnglish ? "Aleksandar" : "Александър"}
             </span>
-            <span className="text-switching-accent font-bold">
+            <span className="text-switching-accent font-bold text-5xl md:text-5xl lg:text-6xl">
               {isEnglish ? "Aleksandrov" : "Александров"}
             </span>
           </h1>
-          <h1 className="text-primary-text font-light -rotate-2 text-xl md:text-2xl lg:text-3xl">
+          <h1 className="text-primary-text font-light -rotate-2 text-2xl md:text-3xl lg:text-4xl">
             {isEnglish ? "Web Developer" : "Уеб Програмист"}
           </h1>
         </div>

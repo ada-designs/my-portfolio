@@ -21,9 +21,9 @@ export default function ContactForm({ togglePopup, isEnglish }) {
   }
 
   return (
-    <section className="container-main relative" id="contact">
+    <section className="container-main relative " id="contact">
       {/* heading */}
-      <h2 className="text-primary-text capitalize relative mb-5 z-10 text-center">
+      <h2 className="text-primary-text text-3xl md:text-4xl lg:text-5xl capitalize relative mb-5 z-10 text-center">
         {isEnglish ? "Let's" : "Нека"}
         <span className="ml-[3%] text-switching-accent">
           {isEnglish ? "Build" : "Направим"}
@@ -36,7 +36,7 @@ export default function ContactForm({ togglePopup, isEnglish }) {
           : "</ Можеш да се свържеш с мен = по всяко време />"}
       </p>
 
-      <div className="w-full border-2 border-gray-300 flex lg:flex-row flex-col justify-between items-center rounded-3xl mt-20 relative gap-10 lg:gap-0 p-5 lg:p-10">
+      <div className="w-full border-2 border-gray-300 flex lg:flex-row flex-col justify-between items-center rounded-3xl mt-20 relative gap-10 lg:gap-0 pb-10 p-5 lg:p-10">
         {/* info block */}
         <div className="text-primary-text flex flex-col gap-2 lg:w-[45%] w-full">
           <h4 className="lg:text-4xl font-extrabold lg:mb-10 mb-4 lg:self-start self-center">
