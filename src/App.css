@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Merge+One&family=Montserrat:wght@400;600&display=swap");
+
+.light {
+  --main-bg: #f6f3ff;
+  --primary-text: black;
+  --primary-accent: #8750fe;
+  --secondary-accent: #c3ff43;
+
+  --switching-accent: #8750fe;
+
+  --shadow: #bbbbbb;
+  --hero-gradient: linear-gradient(
+    180deg,
+    #97fc01 0%,
+    #d3e9ca 50%,
+    #8b5cf6 100%
+  );
+  --footer-gradient: linear-gradient(
+    135deg,
+    #99fc04 0%,
+    #8d64ec 70%,
+    #6a30f1 100%
+  );
+  --bg-effects: #d6d5d5;
+}
+
+.dark {
+  --main-bg: #0a1022;
+  --primary-text: white;
+  --primary-accent: #8750fe;
+  --secondary-accent: #c3ff43;
+
+  --switching-accent: #c3ff43;
+
+  --shadow: #492d85;
+  --hero-gradient: linear-gradient(
+    180deg,
+    #8b5cf6 0%,
+    #9ca3af 50%,
+    #84cc16 100%
+  );
+  --footer-gradient: linear-gradient(
+    135deg,
+    #8ae206 0%,
+    #785eeb 55%,
+    #6a30f1 100%
+  );
+
+  --bg-effects: #ebebeb27;
+}
+
+@theme {
+  --color-main-bg: var(--main-bg);
+  --color-primary-text: var(--primary-text);
+  --color-primary-accent: var(--primary-accent);
+  --color-secondary-accent: var(--secondary-accent);
+  --color-switching-accent: var(--switching-accent);
+  --color-bg-effects: var(--bg-effects);
+  --color-shadow: var(--shadow);
+  --color-gradient: var(--hero-gradient);
+}
+
+@layer components {
+  .container-main {
+    @apply lg:w-[80%] w-[90%] mx-auto flex flex-col items-center py-10 lg:py-20;
+  }
+}
+
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+@layer components {
+  h1 {
+    @apply font-bold text-2xl md:text-3xl lg:text-6xl;
+  }
+  h2 {
+    @apply font-bold text-xl md:text-4xl lg:text-5xl;
+  }
+  h3 {
+    @apply font-semibold text-lg md:text-xl lg:text-2xl;
+  }
+  h4 {
+    @apply font-semibold text-base md:text-lg lg:text-xl;
+  }
+  a {
+    @apply font-semibold text-base md:text-lg lg:text-xl;
+  }
+  h5 {
+    @apply font-medium text-sm md:text-base lg:text-lg;
+  }
+  h6 {
+    @apply font-medium text-xs md:text-sm lg:text-base;
+  }
+  p {
+    @apply text-sm md:text-base lg:text-base leading-relaxed;
+  }
+  small {
+    @apply font-light text-xs md:text-sm lg:text-base text-gray-500;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea {
+  background-color: white;
+  border-radius: 24px;
+  padding: 8px;
+}
+
+.overlay {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+
+.btn {
+  padding: 2% 5%;
+  border-radius: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
