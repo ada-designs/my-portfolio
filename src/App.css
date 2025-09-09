@@ -4,6 +4,8 @@
 body {
   font-family: "Montserrat", "Roboto", "Segoe UI", "Helvetica Neue", Arial,
     sans-serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
 }
 
 .light {
@@ -75,6 +77,8 @@ body {
 html {
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer components {

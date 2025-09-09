@@ -6,7 +6,7 @@ export default function Hero({ isEnglish }) {
         <div className="z-10 text-center space-y-2 lg:w-[1200px] md:w-[700px] w-[300px]">
           <h1 className="text-primary-text flex flex-wrap justify-center text-center font-light text-3xl md:text-5xl lg:text-6xl">
             {isEnglish ? "I'm" : "Аз съм"}{" "}
-            <span className="text-switching-accent font-bold mr-2 md:mr-3 px-3 md:px-5 py-1 border rounded-3xl">
+            <span className="text-switching-accent font-bold mr-2 md:mr-3 px-3 md:px-5 ml-1 border rounded-3xl">
               {isEnglish ? "Aleksandar" : "Александър"}
             </span>
             <span className="text-switching-accent font-bold">
@@ -56,10 +56,10 @@ export default function Hero({ isEnglish }) {
         </div>
 
         {/* CTA */}
-        <div className="bg-main-bg w-full relative z-30 -translate-y-2 md:-translate-y-8 lg:-translate-y-15 flex justify-center pb-15">
+        <div className="bg-main-bg w-[90%] relative z-30 -translate-y-2 md:-translate-y-8 lg:-translate-y-15 flex justify-center pb-15">
           <a
             href="#contact"
-            className="btn bg-primary-accent hover:bg-secondary-accent  text-white text-xs lg:text-xl hover:text-black mt-0 md:-mt-3 lg:-mt-10"
+            className="btn bg-primary-accent hover:bg-secondary-accent  text-white text-xs lg:text-xl hover:text-black -mt-2 md:-mt-3 lg:-mt-10"
           >
             {`${isEnglish ? "Let's talk" : "Свържи се с мен"}`}
           </a>
