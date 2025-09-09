@@ -28,7 +28,7 @@ export default function Hero({ isEnglish }) {
               flex justify-center items-end
             "
           >
-            <div className="absolute inset-0 rounded-full bg-[image:var(--hero-gradient)] blur-md overflow-x-hidden" />
+            <div className="absolute inset-0 rounded-full bg-[image:var(--hero-gradient)] lg:blur-sm blur-xs overflow-x-hidden" />
             {/* little code glyphs */}
             <span
               className="text-primary-text absolute font-extrabold blur-xs

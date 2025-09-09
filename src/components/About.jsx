@@ -61,7 +61,7 @@ export default function About({ isEnglish }) {
 
         <div className="flex items-center justify-center relative w-ful">
           <span
-            className="text-primary-text font-extrabold absolute -rotate-20 blur-sm
+            className="text-primary-text font-extrabold absolute -rotate-20 lg:blur-md blur-sm
                              text-4xl md:text-6xl lg:text-8xl
                              lg:left-25 md:left-15 left-0"
           >
@@ -85,7 +85,7 @@ export default function About({ isEnglish }) {
             />
           </span>
           <span
-            className="text-primary-text  font-extrabold absolute rotate-30 blur-sm
+            className="text-primary-text  font-extrabold absolute rotate-30 lg:blur-sm blur-xs
                              text-xl md:text-4xl lg:text-5xl
                              lg:right-30 md:right-20 right-0"
           >

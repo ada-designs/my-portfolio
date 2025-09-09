@@ -1,10 +1,22 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800:900&display=swap&subset=latin,cyrillic");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,700;0,800&display=swap"); /* if available */
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;0,800&subset=cyrillic&display=swap");
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  text-rendering: optimizeLegibility;
+  font-family: "Sofia Sans", /* Bulgarian-optimized */ "Gentium Plus",
+    /* Bold serif alternative */ -apple-system,
+    /* SF Pro fallback for iOS/Mac */ system-ui, sans-serif;
+}
+
+h1,
+.font-extrabold {
+  font-weight: 800; /* Ensures ExtraBold or nearest heavy weight */
 }
 
 .light {
