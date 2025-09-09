@@ -22,8 +22,8 @@ export default function Hero({ isEnglish }) {
         <div className="flex w-full justify-center">
           <div
             className="
-              relative -mt-20 md:-mt-[20%] lg:-mt-[20%]
-              w-[320px] md:w-[560px] lg:w-[900px]
+              relative -mt-[40%] md:-mt-[20%] lg:-mt-[20%]
+              w-[420px] md:w-[560px] lg:w-[900px]
               aspect-square rounded-full
               flex justify-center items-end
             "
@@ -50,7 +50,7 @@ export default function Hero({ isEnglish }) {
               src="/images/me.png"
               alt="Me"
               className="z-20 object-contain pointer-events-none
-                         w-50 h-50 md:w-90 md:h-90 lg:w-140 lg:h-140 mb-2 md:mb-4 lg:mb-[5%]"
+                         w-60 h-60 md:w-90 md:h-90 lg:w-140 lg:h-140 mb-2 md:mb-4 lg:mb-[5%]"
             />
           </div>
         </div>

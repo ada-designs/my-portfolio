@@ -12,16 +12,39 @@ import Popup from "./components/Popup";
 import "./App.css";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(true);
   const [popup, setShowPopup] = useState(false);
   const [isEnglish, setIsEnglish] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    // check if user already picked something before
+    const saved = localStorage.getItem("darkMode");
+    if (saved !== null) {
+      return saved === "true";
+    }
+
+    // if no saved value → follow system preference
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add("dark");
+      root.classList.remove("light");
+    } else {
+      root.classList.add("light");
+      root.classList.remove("dark");
+    }
+
+    // save preference
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+
+  function toggleDarkMode() {
+    setDarkMode((prev) => !prev);
+  }
 
   function togglePopup() {
     setShowPopup(!popup);
-  }
-
-  function toggleDarkMode() {
-    setDarkMode((v) => !v);
   }
 
   function switchLanguage() {

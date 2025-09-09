@@ -8,9 +8,12 @@ export default function Header({
   isEnglish,
 }) {
   return (
-    <header className="grid grid-cols-2 lg:grid-cols-3 items-center w-[90%] self-center py-5 px-1">
-      <span className="font-extrabold text-primary-text lg:text-xl text-xs cursor-pointer">
-        <a href="#">{`ALEKSANDROV </>`}</a>
+    <header className="grid grid-cols-2 lg:grid-cols-3  w-[90%] self-center py-5 px-1 items-center">
+      <span>
+        <a
+          className="font-extrabold text-primary-text lg:text-xl md:text-xs text-[12px] cursor-pointer"
+          href="#"
+        >{`ALEKSANDROV </>`}</a>
       </span>
       <ul className="uppercase lg:flex hidden justify-between font-bold text-primary-text cursor-pointer">
         <li>
@@ -43,16 +46,20 @@ export default function Header({
         <img
           loading="lazy"
           src={isEnglish ? "./images/bg.png" : "./images/en.png"}
-          className="w-[40px] h-[20px] rounded-sm cursor-pointer"
+          className="lg:w-[40px] lg:h-[20px] w-[35px] h-[18px] rounded-sm cursor-pointer lg:mt-2 mt-0.5"
           onClick={switchLanguage}
         />
         <button
           onClick={toggleDarkMode}
-          className={`bg-primary-text text-main-bg w-[70px] lg:w-[100px] h-[33px] py-1 px-3 rounded-4xl cursor-pointer flex items-center relative -mt-2`}
+          className={`bg-primary-text text-main-bg w-[70px] lg:w-[100px] lg:h-[33px] h-[23px] py-1 px-3 rounded-4xl cursor-pointer flex items-center relative`}
         >
-          <span className={`absolute ${darkMode ? "left-3" : "right-3"}`}>
+          <span
+            className={`absolute lg:${darkMode ? "left-3" : "right-3"} ${
+              darkMode ? "left-2" : "right-2"
+            }`}
+          >
             {darkMode ? (
-              <span className="text-2xl">☀</span>
+              <span className="lg:text-2xl text-xl">☀</span>
             ) : (
               <FontAwesomeIcon icon={faMoon} className="text-yellow-300" />
             )}
