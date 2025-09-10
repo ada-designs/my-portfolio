@@ -23,7 +23,7 @@ export default function Hero({ isEnglish }) {
           <div
             className="
               relative -mt-[40%] md:-mt-[20%] lg:-mt-[20%]
-              w-[420px] md:w-[560px] lg:w-[900px]
+              w-[375px] md:w-[560px] lg:w-[900px]
               aspect-square rounded-full
               flex justify-center items-end
             "
