@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,700;0,800&display=swap"); /* if available */
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;0,800&subset=cyrillic&display=swap");
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap&subset=latin,cyrillic");
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -9,19 +9,11 @@ html {
 }
 
 body {
-  font-family: "Sofia Sans", /* Bulgarian-optimized */ "Gentium Plus",
-    /* Bold serif alternative */ -apple-system,
-    /* SF Pro fallback for iOS/Mac */ system-ui, sans-serif;
+  font-family: "Montserrat", -apple-system, system-ui, sans-serif;
 }
 
-h1,
-h2 {
-  font-weight: 800;
-}
-
-h3,
-h4 {
-  font-weight: 700;
+.no-antialias {
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .light {

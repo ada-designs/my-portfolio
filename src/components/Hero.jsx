@@ -14,7 +14,7 @@ export default function Hero({ isEnglish }) {
             </span>
           </h1>
           <h1 className="text-primary-text font-light -rotate-2 text-2xl md:text-3xl lg:text-4xl">
-            {isEnglish ? "Web Developer" : "Уеб Програмист"}
+            {isEnglish ? "Front End Developer" : "Фронт Енд Програмист"}
           </h1>
         </div>
 
@@ -28,7 +28,7 @@ export default function Hero({ isEnglish }) {
               flex justify-center items-end
             "
           >
-            <div className="absolute inset-0 rounded-full bg-[image:var(--hero-gradient)] lg:blur-sm blur-xs overflow-x-hidden" />
+            <div className="absolute inset-0 rounded-full bg-[image:var(--hero-gradient)] lg:blur-sm blur-xs max-w-full" />
             {/* little code glyphs */}
             <span
               className="text-primary-text absolute font-extrabold blur-xs
@@ -59,7 +59,7 @@ export default function Hero({ isEnglish }) {
         <div className="bg-main-bg w-[90%] relative z-30 -translate-y-2 md:-translate-y-8 lg:-translate-y-15 flex justify-center pb-15">
           <a
             href="#contact"
-            className="btn bg-primary-accent hover:bg-secondary-accent  text-white text-xs lg:text-xl hover:text-black -mt-2 md:-mt-3 lg:-mt-10"
+            className="btn bg-primary-accent hover:bg-secondary-accent font-extrabold text-white text-xs lg:text-xl hover:text-black -mt-2 md:-mt-3 lg:-mt-10"
           >
             {`${isEnglish ? "Let's talk" : "Свържи се с мен"}`}
           </a>
