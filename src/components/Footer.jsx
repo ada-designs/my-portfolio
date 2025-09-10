@@ -15,7 +15,7 @@ export default function Footer({ isEnglish }) {
       </div>
       <div className=" w-full h-[200px] flex items-center justify-center bg-switching-accent rounded-t-[100%] bg-[image:var(--footer-gradient)]">
         <ul className="bg-white px-20 py-3 rounded-2xl flex flex-row justify-around gap-10 text-2xl shadow-2xl">
-          <li className="cursor-pointer transition-transform duration-500 ease-out hover:scale-110">
+          <li className="cursor-pointer transition-transform duration-500 ease-out hover:scale-110 text-primary-text">
             <a
               href="https://github.com/ada-designs"
               target="_blank"
@@ -24,7 +24,7 @@ export default function Footer({ isEnglish }) {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
-          <li className="cursor-pointer transition-transform duration-500 ease-out hover:scale-110">
+          <li className="cursor-pointer transition-transform duration-500 ease-out hover:scale-110 text-primary-text">
             <a
               href="https://www.linkedin.com/in/aleksandar-aleksandrov-833ba8233/"
               target="_blank"
@@ -33,7 +33,7 @@ export default function Footer({ isEnglish }) {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
-          <li className="cursor-pointer transition-transform duration-500 ease-out hover:scale-110">
+          <li className="cursor-pointer transition-transform duration-500 ease-out hover:scale-110 text-primary-text">
             <a href="mailto:alex.adadesigns@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>

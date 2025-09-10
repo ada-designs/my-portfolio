@@ -131,7 +131,9 @@ function Box({
     <div
       className={`bg-${color} ${sideClass} ${margin}  text-${textColor} ${zIndex} lg:w-[50%] p-10 rounded-[50px]`}
     >
-      <h3 className="text-2xl mb-[3%]">{isEnglish ? heading : headingBG}</h3>
+      <h3 className="lg:text-2xl text-xl font-bold mb-[3%]">
+        {isEnglish ? heading : headingBG}
+      </h3>
       <p>{isEnglish ? text : textBG}</p>
     </div>
   );

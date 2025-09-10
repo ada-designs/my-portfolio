@@ -35,7 +35,7 @@ export default function Experience({ isEnglish }) {
 
           <div className="flex gap-20 z-2">
             <span className="flex flex-col">
-              <p className="text-switching-accent text-6xl font-extrabold -mb-5">
+              <p className="text-switching-accent text-6xl font-extrabold -mb-5 ml-3">
                 2+
               </p>
               <h4 className="text-primary-text text-center lg:text-start">
@@ -44,7 +44,7 @@ export default function Experience({ isEnglish }) {
               </h4>
             </span>
             <span className="flex flex-col">
-              <p className="text-switching-accent text-6xl font-extrabold -mb-5">
+              <p className="text-switching-accent text-6xl font-extrabold -mb-5 ml-3">
                 15+
               </p>
               <h4 className="text-primary-text text-center lg:text-start">

@@ -62,7 +62,7 @@ export default function ContactForm({ togglePopup, isEnglish }) {
           onSubmit={handleSubmit}
           method="POST"
         >
-          <label htmlFor="name" className="text-switching-accent">
+          <label htmlFor="name" className="text-switching-accent text-sm">
             {isEnglish ? "Name" : "Име"}
           </label>
           <input
@@ -73,7 +73,7 @@ export default function ContactForm({ togglePopup, isEnglish }) {
             required
           />
 
-          <label htmlFor="email" className="text-switching-accent">
+          <label htmlFor="email" className="text-switching-accent text-sm">
             Email
           </label>
           <input
@@ -86,7 +86,7 @@ export default function ContactForm({ togglePopup, isEnglish }) {
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-          <label htmlFor="message" className="text-switching-accent">
+          <label htmlFor="message" className="text-switching-accent text-sm">
             {isEnglish ? "Message" : "Съобщение"}
           </label>
           <textarea
@@ -106,7 +106,7 @@ export default function ContactForm({ togglePopup, isEnglish }) {
           <button
             type="submit"
             disabled={state.submitting}
-            className="btn bg-secondary-accent text-black hover:bg-primary-accent hover:text-white mt-5"
+            className="btn bg-secondary-accent text-black hover:bg-primary-accent hover:text-white mt-5 text-sm lg:text-md"
           >
             {isEnglish ? "Send" : "Изпрати"}
           </button>

@@ -3,17 +3,17 @@ export default function Hero({ isEnglish }) {
     <section className="container-main flex flex-col mb-0 pb-0">
       <div className="flex flex-col items-center justify-center py-10 md:py-14 lg:py-16">
         {/* heading */}
-        <div className="z-10 text-center space-y-2  lg:w-[1200px] md:w-[700px] w-[300px]">
-          <h1 className="text-primary-text flex flex-wrap justify-center text-center font-light text-4xl md:text-5xl lg:text-6xl">
+        <div className="z-10 text-center space-y-2  lg:w-[1200px] md:w-[700px] w-[250px]">
+          <h1 className="text-primary-text flex flex-wrap justify-center text-center font-light text-3xl md:text-5xl lg:text-6xl">
             {isEnglish ? "I'm" : "Аз съм"}{" "}
-            <span className="text-switching-accent text-5xl md:text-5xl lg:text-6xl font-bold mr-2 md:mr-3 px-3 md:px-5 ml-1 border rounded-3xl">
+            <span className="text-switching-accent text-4xl md:text-5xl lg:text-6xl font-bold mr-2 md:mr-3 px-3 md:px-5 ml-1 border rounded-3xl">
               {isEnglish ? "Aleksandar" : "Александър"}
             </span>
-            <span className="text-switching-accent font-bold text-5xl md:text-5xl lg:text-6xl">
+            <span className="text-switching-accent font-bold text-4xl md:text-5xl lg:text-6xl">
               {isEnglish ? "Aleksandrov" : "Александров"}
             </span>
           </h1>
-          <h1 className="text-primary-text font-light -rotate-2 text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-primary-text font-light -rotate-2 text-xl md:text-3xl lg:text-4xl">
             {isEnglish ? "Front End Developer" : "Фронт Енд Програмист"}
           </h1>
         </div>
@@ -50,7 +50,7 @@ export default function Hero({ isEnglish }) {
               src="/images/me.png"
               alt="Me"
               className="z-20 object-contain pointer-events-none
-                         w-60 h-60 md:w-90 md:h-90 lg:w-140 lg:h-140 mb-2 md:mb-4 lg:mb-[5%]"
+                         w-55 h-55 md:w-90 md:h-90 lg:w-140 lg:h-140 mb-2 md:mb-4 lg:mb-[5%]"
             />
           </div>
         </div>
