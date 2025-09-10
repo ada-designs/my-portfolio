@@ -1,8 +1,8 @@
 const languages = [
-  { lang: "html", image: "./images/html.png" },
-  { lang: "css", image: "./images/css.png" },
-  { lang: "javascript", image: "./images/javascript.png" },
-  { lang: "react", image: "./images/react.png" },
+  { lang: "html", image: "./images/html.webp" },
+  { lang: "css", image: "./images/css.webp" },
+  { lang: "javascript", image: "./images/javascript.webp" },
+  { lang: "react", image: "./images/react.webp" },
 ];
 
 export default function Experience({ isEnglish }) {
