@@ -45,7 +45,7 @@ export default function Header({
       <div className="flex justify-end gap-5">
         <img
           loading="lazy"
-          src={isEnglish ? "./images/bg.png" : "./images/en.png"}
+          src={isEnglish ? "./images/bg.webp" : "./images/en.webp"}
           className="lg:w-[40px] lg:h-[20px] w-[35px] h-[18px] rounded-sm cursor-pointer lg:mt-2 mt-0.5"
           onClick={switchLanguage}
         />

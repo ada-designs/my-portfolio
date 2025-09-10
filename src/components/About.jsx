@@ -70,7 +70,7 @@ export default function About({ isEnglish }) {
           <span className="relative w-[55%] md:w-[45%] lg:w-[33%]">
             <img
               loading="lazy"
-              src="/images/about_image.JPG"
+              src="/images/about_image.webp"
               alt="About"
               className=" aspect-square object-cover rounded-4xl border-5 md:border-10 border-primary-text"
             />

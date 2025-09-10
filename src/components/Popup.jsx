@@ -6,7 +6,7 @@ export default function Popup({ togglePopup }) {
         <div className="bg-[image:var(--hero-gradient)] fixed lg:w-[80%] lg:h-[80%] flex flex-col items-center justify-center gap-10 lg:py-20 py-15 lg:px-30 px-15 rounded-4xl">
           <img
             loading="lazy"
-            src="./images/tick.png"
+            src="./images/tick.webp"
             className="w-[100px] h-[100px]"
           />
           <h3 className="lg:text-5xl text-3xl font-extrabold text-center">

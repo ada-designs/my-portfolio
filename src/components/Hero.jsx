@@ -47,7 +47,7 @@ export default function Hero({ isEnglish }) {
 
             <img
               loading="lazy"
-              src="/images/me.png"
+              src="/images/me.webp"
               alt="Me"
               className="z-20 object-contain pointer-events-none
                          w-55 h-55 md:w-90 md:h-90 lg:w-140 lg:h-140 mb-2 md:mb-4 lg:mb-[5%]"

@@ -6,7 +6,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 const all = [
   {
     type: "Websites",
-    image: "./images/Luna.png",
+    image: "./images/Luna.webp",
     name: "Luna's Bakery - Cake Website",
     nameBG: "Luna's Bakery – Уебсайт за торти",
     description:
@@ -19,7 +19,7 @@ const all = [
   },
   {
     type: "Games",
-    image: "./images/Bomb.png",
+    image: "./images/Bomb.webp",
     name: "Don't click on the bomb!",
     nameBG: "Не натискай бомбата!",
     description:
@@ -32,7 +32,7 @@ const all = [
   },
   {
     type: "Websites",
-    image: "./images/Blooming.png",
+    image: "./images/Blooming.webp",
     name: "Always Blooming Events",
     nameBG: "Always Blooming Events – Декорации",
     description:
@@ -45,7 +45,7 @@ const all = [
   },
   {
     type: "Websites",
-    image: "./images/Alex.png",
+    image: "./images/Alex.webp",
     name: "German with Alex",
     nameBG: "Немски с Алекс",
     description:
@@ -58,7 +58,7 @@ const all = [
   },
   {
     type: "Games",
-    image: "./images/rock.png",
+    image: "./images/rock.webp",
     name: "Rock, Paper, Scissors",
     nameBG: "Камък, ножица, хартия",
     description:
@@ -71,7 +71,7 @@ const all = [
   },
   {
     type: "Apps",
-    image: "./images/matchday.png",
+    image: "./images/matchday.webp",
     name: "Matchday Packing List",
     nameBG: "Списък за мачов ден",
     description:
@@ -84,7 +84,7 @@ const all = [
   },
   {
     type: "Games",
-    image: "./images/guess.png",
+    image: "./images/guess.webp",
     name: "Guess The Number",
     nameBG: "Познай числото",
     description:
@@ -100,7 +100,7 @@ const all = [
 const websites = [
   {
     type: "Websites",
-    image: "./images/Alex.png",
+    image: "./images/Alex.webp",
     name: "German with Alex",
     nameBG: "Немски с Алекс",
     description:
@@ -113,7 +113,7 @@ const websites = [
   },
   {
     type: "Websites",
-    image: "./images/Blooming.png",
+    image: "./images/Blooming.webp",
     name: "Always Blooming Events",
     nameBG: "Always Blooming Events – Декорации",
     description:
@@ -126,7 +126,7 @@ const websites = [
   },
   {
     type: "Websites",
-    image: "./images/Luna.png",
+    image: "./images/Luna.webp",
     name: "Luna's Bakery - Cake Website",
     nameBG: "Luna's Bakery – Уебсайт за торти",
     description:
